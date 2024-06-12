@@ -82,6 +82,7 @@ public class Analizador {
                 }
             }
 
+            planoNuevo = new Plano(noPaso, nuevosAviones);
             planoNuevo = new Plano(noPaso, nuevosAviones, colisiones);
             memoria.put(noPaso, planoNuevo);
             return planoNuevo;
